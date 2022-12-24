@@ -6,6 +6,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -25,7 +29,9 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <a href="#" class="nav_logo">M.S.M.</a>
+        <a href="#" class="nav_logo"
+          ><img src="images/logo.svg" alt="Logo" />M.S.M.
+        </a>
         <div class="nav_menu">
           <ul class="nav_list grid">
             <li class="nav_list">
@@ -47,8 +53,9 @@
             </li>
 
             <li class="nav_list">
-              <a href="#certificate" class="nav_link"
-                ><i class="uil uil-medal nav_icon"></i>Courses</a
+              <a href="#certificate" class="nav_link">
+                <i class="uil uil-medal nav_icon"></i>
+                Courses</a
               >
             </li>
 
@@ -59,8 +66,9 @@
             </li>
 
             <li class="nav_list">
-              <a href="#contact" class="nav_link"
-                ><i class="uil uil-message nav_icon"></i>Contact</a
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i>
+                Contact</a
               >
             </li>
           </ul>
@@ -73,6 +81,61 @@
         </div>
       </nav>
     </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a
+                href="https://github.com/shyam16102001"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="Github Profile Link"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/shyam16102001/"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn Profile Link"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://www.credly.com/users/shyam16102001/badges"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="Credly Profile Link"
+              >
+                <i class="uil uil-award"></i>
+              </a>
+            </div>
+            <div class="home_img"></div>
+            <div class="home_data">
+              <h1 class="home_title">Shyam M</h1>
+              <h3 class="home_subtitle">Software Developer</h3>
+              <p class="home_description">
+                A Tech Enthusiast, specialized in Application development using
+                Flutter & Cloud application development.
+              </p>
+              <a href="" class="button button--flex"
+                >Download CV <img src="images/download.svg" alt="Download Logo"
+              /></a>
+            </div>
+          </div>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll-button button--flex">
+              <img src="images/scroll_down.svg" alt="Scroll Down Logo" />
+              <span class="home_scroll-name">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script/script.js"></script>
   </body>
