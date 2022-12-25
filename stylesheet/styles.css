@@ -368,12 +368,6 @@ img {
   margin: var(--mb-1-5) 0;
 }
 
-/* .skills_box {
-  display: flex;
-  justify-content: center;
-  column-gap: 2.5rem;
-} */
-
 .skills_group {
   display: grid;
   align-items: flex-start;
@@ -516,7 +510,6 @@ img {
 .certification_model-info {
   font-size: var(--small-font-size);
   color: var(--text-color);
-  /* text-decoration: none; */
 }
 
 .active-model {
@@ -524,6 +517,79 @@ img {
   visibility: visible;
 }
 
+.qualification_container {
+  max-width: 768px;
+}
+
+.qualification_button {
+  display: flex;
+  justify-content: center;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  margin: 0 var(--mb-1) var(--mb-2) 0;
+  cursor: pointer;
+}
+
+.qualification_button:hover {
+  color: var(--title-color-dark);
+}
+
+.qualification_icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification_section {
+  display: grid;
+  justify-content: center;
+}
+
+.qualification_content {
+  display: block;
+}
+
+.qualification_data {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification_subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+}
+
+.qualification_calender {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification_calender i {
+  padding-right: 0.5rem;
+}
+
+.qualification_rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+
+.qualification_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--text-color);
+  transform: translate(6px, -7px);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -598,6 +664,11 @@ img {
 
   .certification-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification_container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -702,6 +773,11 @@ img {
   .certification_icon {
     height: 1.5rem;
   }
+
+  .qualification_container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -756,5 +832,9 @@ img {
 
   .certification_content {
     padding-right: 6rem;
+  }
+
+  .qualification_data {
+    gap: 0.5rem;
   }
 }
