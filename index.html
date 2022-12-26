@@ -122,7 +122,11 @@
                 A Tech Enthusiast, specialized in Cloud technologies and
                 solutions & Application development using Flutter.
               </p>
-              <a href="" class="button button--flex cv_download"
+              <a
+                href="cv.pdf"
+                target="_blank"
+                rel="noopener"
+                class="button button--flex cv_download"
                 >Download CV <img src="images/download.svg" alt="Download Logo"
               /></a>
             </div>
@@ -174,7 +178,11 @@
               specialized in cloud technologies and solutions."
             </p>
 
-            <a href="" class="button button--flex cv_download"
+            <a
+              href="cv.pdf"
+              target="_blank"
+              rel="noopener"
+              class="button button--flex cv_download"
               >Download CV<img src="images/download.svg" alt="Download Logo"
             /></a>
           </div>
@@ -437,18 +445,28 @@
                 <ul class="certification_model-certificates grid">
                   <li class="certification_model-certificate">
                     <i class="uil uil-award certification_model-icon"></i>
-                    <p class="certification_model-info">
+                    <a
+                      href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4E7524021F28A5FC1F7DC2395B97E31FF9F9B78334B0B8E0FC0242FD10737753"
+                      target="_blank"
+                      rel="noopener"
+                      class="certification_model-info"
+                    >
                       Oracle Cloud Infrastructure 2021 Certified Architect
                       Associate
-                    </p>
+                    </a>
                   </li>
 
                   <li class="certification_model-certificate">
                     <i class="uil uil-award certification_model-icon"></i>
-                    <p class="certification_model-info">
+                    <a
+                      href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E03AE914B9DF85A1D0F42CFDA714836456C8802032869F486F49966AF9AB653B"
+                      target="_blank"
+                      rel="noopener"
+                      class="certification_model-info"
+                    >
                       Oracle Cloud Infrastructure Foundations 2021 Certified
                       Associate
-                    </p>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -676,6 +694,8 @@
               <h3 class="work_title">MyTenera</h3>
               <a
                 href="https://github.com/Shyam16102001/MyTenera"
+                target="_blank"
+                rel="noopener"
                 class="work_button"
                 >Source Code
                 <i class="bx bx-right-arrow-alt work_button-icon"></i
@@ -691,6 +711,8 @@
               <h3 class="work_title">Peca</h3>
               <a
                 href="https://github.com/Shyam16102001/Peca"
+                target="_blank"
+                rel="noopener"
                 class="work_button"
                 >Source Code
                 <i class="bx bx-right-arrow-alt work_button-icon"></i
@@ -706,6 +728,8 @@
               <h3 class="work_title">Headline</h3>
               <a
                 href="https://github.com/Shyam16102001/Headline"
+                target="_blank"
+                rel="noopener"
                 class="work_button"
                 >Source Code
                 <i class="bx bx-right-arrow-alt work_button-icon"></i
@@ -721,6 +745,8 @@
               <h3 class="work_title">Task Lock</h3>
               <a
                 href="https://github.com/Shyam16102001/Task_Lock"
+                target="_blank"
+                rel="noopener"
                 class="work_button"
                 >Source Code
                 <i class="bx bx-right-arrow-alt work_button-icon"></i
@@ -805,55 +831,63 @@
 
     <footer class="footer">
       <div class="footer_container container">
-        <h1 class="footer_title">M.S.M.</h1>
+        <div class="footer_logo">
+          <img src="images/logo.svg" alt="Logo" class="footer_img" />
+          <h1 class="footer_title">M.S.M.</h1>
+        </div>
 
         <ul class="footer_list">
-          <li>
+          <li onclick="toggleHeader('about_link')">
             <a href="#about" class="footer_link">About</a>
           </li>
 
-          <li>
+          <li onclick="toggleHeader('skills_link')">
+            <a href="#skills" class="footer_link">Skills</a>
+          </li>
+
+          <li onclick="toggleHeader('certificate_link')">
             <a href="#certification" class="footer_link">Certification</a>
           </li>
 
-          <li>
+          <li onclick="toggleHeader('portfolio_link')">
             <a href="#portfolio" class="footer_link">Portfolio</a>
           </li>
         </ul>
 
         <div class="footer_social">
-          <a
-            href="https://instagram.com/shyam16102001"
-            class="footer_social-icon"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram Profile Link"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://www.twitter.com/shyam16102001/"
-            class="footer_social-icon"
-            target="_blank"
-            rel="noopener"
-            aria-label="Twitter Profile Link"
-          >
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shyam16102001"
-            class="footer_social-icon"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn Profile Link"
-          >
-            <i class="bx bxl-linkedin"></i>
-          </a>
+          <div class="footer_social-link">
+            <a
+              href="https://instagram.com/shyam16102001"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram Profile Link"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/shyam16102001/"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter Profile Link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shyam16102001"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn Profile Link"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
         </div>
-
-        <span class="footer_end">
-          Created with <i class="uil uil-heart"></i> by M.S.M.
-        </span>
       </div>
+      <span class="footer_end">
+        Created with <i class="uil uil-heart"></i> by M.S.M.
+      </span>
     </footer>
 
     <a href="#" class="scrollup">

@@ -1,6 +1,7 @@
 let menu = document.querySelector('.nav_toggle');
 let navbar = document.querySelector('.nav_menu');
 let close = document.querySelector('.nav_close');
+let nav_link = document.querySelectorAll('.nav_link');
 
 window.addEventListener('scroll', function () {
   let header = document.querySelector('.header');
@@ -30,23 +31,16 @@ close.onclick = () => {
 
 window.onscroll = () => {
   navbar.classList.remove('show-menu');
-  document
-    .querySelector('.certification_model1')
-    .classList.remove('active-model');
-  document
-    .querySelector('.certification_model2')
-    .classList.remove('active-model');
-  document
-    .querySelector('.certification_model3')
-    .classList.remove('active-model');
-  document
-    .querySelector('.certification_model4')
-    .classList.remove('active-model');
+
+  let model = document.querySelectorAll('.active-model');
+
+  model.forEach((a) => {
+    a.classList.remove('active-model');
+  });
 };
 
 function toggleHeader(params) {
   let className = '.' + params;
-  let nav_link = document.querySelectorAll('.nav_link');
   nav_link.forEach((a) => {
     a.classList.remove('active-link');
   });
