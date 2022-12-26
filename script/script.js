@@ -2,6 +2,24 @@ let menu = document.querySelector('.nav_toggle');
 let navbar = document.querySelector('.nav_menu');
 let close = document.querySelector('.nav_close');
 
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('.header');
+  if (this.scrollY >= 80) {
+    header.classList.add('scroll-header');
+  } else {
+    header.classList.remove('scroll-header');
+  }
+});
+
+window.addEventListener('scroll', function () {
+  let scrollup = document.querySelector('.scrollup');
+  if (this.scrollY >= 560) {
+    scrollup.classList.add('show-scroll');
+  } else {
+    scrollup.classList.remove('show-scroll');
+  }
+});
+
 menu.onclick = () => {
   navbar.classList.toggle('show-menu');
 };
@@ -25,6 +43,15 @@ window.onscroll = () => {
     .querySelector('.certification_model4')
     .classList.remove('active-model');
 };
+
+function toggleHeader(params) {
+  let className = '.' + params;
+  let nav_link = document.querySelectorAll('.nav_link');
+  nav_link.forEach((a) => {
+    a.classList.remove('active-link');
+  });
+  document.querySelector(className).classList.add('active-link');
+}
 
 function toggle(number) {
   switch (number) {
@@ -50,6 +77,7 @@ function toggle(number) {
       break;
 
     default:
+      console.log(number);
       break;
   }
 }

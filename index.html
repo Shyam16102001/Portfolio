@@ -34,39 +34,39 @@
         </a>
         <div class="nav_menu">
           <ul class="nav_list grid">
-            <li class="nav_list">
-              <a href="#home" class="nav_link"
+            <li class="nav_list" onclick="toggleHeader('home_link')">
+              <a href="#home" class="nav_link home_link active-link"
                 ><i class="uil uil-estate nav_icon"></i>Home</a
               >
             </li>
 
-            <li class="nav_list">
-              <a href="#about" class="nav_link"
+            <li class="nav_list" onclick="toggleHeader('about_link')">
+              <a href="#about" class="nav_link about_link"
                 ><i class="uil uil-user nav_icon"></i>About</a
               >
             </li>
 
-            <li class="nav_list">
-              <a href="#skills" class="nav_link"
+            <li class="nav_list" onclick="toggleHeader('skills_link')">
+              <a href="#skills" class="nav_link skills_link"
                 ><i class="uil uil-file-alt nav_icon"></i>Skills</a
               >
             </li>
 
-            <li class="nav_list">
-              <a href="#certification" class="nav_link">
+            <li class="nav_list" onclick="toggleHeader('certificate_link')">
+              <a href="#certification" class="nav_link certificate_link">
                 <i class="uil uil-medal nav_icon"></i>
                 Certification</a
               >
             </li>
 
-            <li class="nav_list">
-              <a href="#portfolio" class="nav_link"
+            <li class="nav_list" onclick="toggleHeader('portfolio_link')">
+              <a href="#portfolio" class="nav_link portfolio_link"
                 ><i class="uil uil-scenery nav_icon"></i>Portfolio</a
               >
             </li>
 
-            <li class="nav_list">
-              <a href="#contact" class="nav_link">
+            <li class="nav_list" onclick="toggleHeader('contact_link')">
+              <a href="#contact" class="nav_link contact_link">
                 <i class="uil uil-message nav_icon"></i>
                 Contact</a
               >
@@ -127,7 +127,7 @@
               /></a>
             </div>
           </div>
-          <div class="home_scroll">
+          <div class="home_scroll" onclick="toggleHeader('about_link')">
             <a href="#about" class="home_scroll-button button--flex">
               <img
                 src="images/scroll_down.svg"
@@ -636,7 +636,7 @@
                     >Chinmaya Vidyalaya, Tirunelveli</span
                   >
                   <div class="qualification_calender">
-                    <i class="uil uil-calendar-alt"></i>2017 - 2019
+                    <i class="uil uil-calendar-alt"></i>2019
                   </div>
                 </div>
               </div>
@@ -729,7 +729,139 @@
           </div>
         </div>
       </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Let us talk</span>
+
+        <div class="contact_container container grid">
+          <div class="contact_content">
+            <div class="contact_info">
+              <div class="contact_card">
+                <img
+                  src="images/gmail.svg"
+                  class="contact_card-icon"
+                  alt="Gmail Icon"
+                />
+
+                <h3 class="contact_card-title">Email</h3>
+                <span class="contact_card-data"
+                  >m.s.m.shyam16102001@gmail.com</span
+                >
+
+                <a
+                  href="mailto:m.s.m.shyam16102001@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a>
+              </div>
+
+              <div class="contact_card">
+                <img
+                  src="images/whatsapp.svg"
+                  class="contact_card-icon"
+                  alt="Whatsapp Icon"
+                />
+
+                <h3 class="contact_card-title">Whatsapp</h3>
+                <span class="contact_card-data">9597117229</span>
+
+                <a
+                  href="https://api.whatsapp.com/send/?phone=919597117229"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a>
+              </div>
+
+              <div class="contact_card">
+                <img
+                  src="images/telegram.svg"
+                  class="contact_card-icon"
+                  alt="Telegram Icon"
+                />
+                <h3 class="contact_card-title">Telegram</h3>
+                <span class="contact_card-data">@Shyam16102001</span>
+
+                <a
+                  href="https://t.me/Shyam16102001"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer_container container">
+        <h1 class="footer_title">M.S.M.</h1>
+
+        <ul class="footer_list">
+          <li>
+            <a href="#about" class="footer_link">About</a>
+          </li>
+
+          <li>
+            <a href="#certification" class="footer_link">Certification</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="footer_link">Portfolio</a>
+          </li>
+        </ul>
+
+        <div class="footer_social">
+          <a
+            href="https://instagram.com/shyam16102001"
+            class="footer_social-icon"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram Profile Link"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/shyam16102001/"
+            class="footer_social-icon"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter Profile Link"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shyam16102001"
+            class="footer_social-icon"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn Profile Link"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+
+        <span class="footer_end">
+          Created with <i class="uil uil-heart"></i> by M.S.M.
+        </span>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup">
+      <i
+        class="uil uil-arrow-up scrollup_icon"
+        onclick="toggleHeader('home_link')"
+      ></i>
+    </a>
 
     <script src="script/script.js"></script>
   </body>
