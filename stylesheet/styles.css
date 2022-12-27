@@ -506,8 +506,8 @@ img {
 }
 
 .certification_model-description {
-  font-size: var(--small-font-size);
-  padding: 0 3.5rem;
+  font-size: var(--smaller-font-size);
+  padding: 0 2.5rem;
   margin-bottom: var(--mb-2);
 }
 
@@ -529,6 +529,12 @@ img {
 .certification_model-info {
   font-size: var(--small-font-size);
   color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.certification_model-info:hover {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
 .active-model {
@@ -735,7 +741,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-1);
 }
 
 .footer_title {
