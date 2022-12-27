@@ -5,9 +5,9 @@
     <img src="images/website.png" alt="Website Screenshot" width=750></img>
 </p>
 
-## To view a live example, **[click here](https://shyam16102001.me/)**.
+### To view a live example, [click here](https://shyam16102001.me/).
 
-## Sections
+<!-- ## Sections
 
 * Summary
 * About me
@@ -15,5 +15,4 @@
 * Certification
 * Education
 * Projects
-* Contact
-
+* Contact -->
