@@ -273,7 +273,7 @@ img {
 }
 
 .home_img {
-  background: url(../images//photo.jpg);
+  background: url(../images/photo.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,7 +282,7 @@ img {
   justify-self: center;
   width: 300px;
   height: 300px;
-  animation: profile_animate 8s ease-in-out infinite 0.1s;
+  animation: profile_animate 6s ease-in-out infinite 0.1s;
 }
 
 .cv_download img {
