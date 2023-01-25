@@ -2,6 +2,18 @@ let menu = document.querySelector('.nav_toggle');
 let navbar = document.querySelector('.nav_menu');
 let close = document.querySelector('.nav_close');
 let nav_link = document.querySelectorAll('.nav_link');
+let education_button = document.querySelector(
+  '.qualification_education-button'
+);
+let experience_button = document.querySelector(
+  '.qualification_experience-button'
+);
+let experience_content = document.querySelector(
+  '.qualification_experience-content'
+);
+let education_content = document.querySelector(
+  '.qualification_education-content'
+);
 
 window.addEventListener('scroll', function () {
   let header = document.querySelector('.header');
@@ -20,6 +32,20 @@ window.addEventListener('scroll', function () {
     scrollup.classList.remove('show-scroll');
   }
 });
+
+education_button.onclick = () => {
+  education_button.classList.add('qualification_active');
+  experience_button.classList.remove('qualification_active');
+  education_content.classList.add('qualification_content-active');
+  experience_content.classList.remove('qualification_content-active');
+};
+
+experience_button.onclick = () => {
+  experience_button.classList.add('qualification_active');
+  education_button.classList.remove('qualification_active');
+  education_content.classList.remove('qualification_content-active');
+  experience_content.classList.add('qualification_content-active');
+};
 
 menu.onclick = () => {
   navbar.classList.toggle('show-menu');
